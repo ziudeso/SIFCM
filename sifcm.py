@@ -293,7 +293,7 @@ class FCM():
                 #d = sum(abs(sum(self.U_new - old_u)))
                 # this way of computing d is faster
                 d = np.sum(abs(self.U - old_u))
-                print("Iteration %d : cost = %f" %(i, d))
+                #print("Iteration %d : cost = %f" %(i, d))
 
                 if d < self.epsilon or i > self.max_iter:
                     break

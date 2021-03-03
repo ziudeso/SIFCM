@@ -305,8 +305,8 @@ class FCM():
                 old_u = np.copy(self.U)
                 self.update_U()
                 d = sum(abs(sum(self.U - old_u)))
-                print "loop : " , int(i)
-                print d
+                print("loop : " , int(i))
+                print(d)
                 self.segmentImage(i)
                 i+=1
 

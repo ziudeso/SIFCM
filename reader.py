@@ -9,7 +9,7 @@ class ReadImage:
 		self.unroll()
 
 	def display(self):
-		print self.img.shape
+		print(self.img.shape)
 		cv2.imshow('1',self.img)
 		cv2.waitKey(0)
 		cv2.destroyAllWindows()
@@ -17,9 +17,9 @@ class ReadImage:
 	def unroll(self):
 		self.x,self.y = self.img.shape
 		self.unrolled = self.img.reshape(self.x*self.y,1)
-		print self.unrolled.shape
+		print(self.unrolled.shape)
 		#for i in xrange(0,50625):
-			#print self.unrolled[i]
+			#print(self.unrolled[i])
 
 	def getData(self):
 		return self.unrolled,self.x*self.y
